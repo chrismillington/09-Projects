@@ -15,7 +15,11 @@ cards.forEach((card,index)=>{
     })
 });
 itemName.classList.add("heading-1");
+itemOrder.innerHTML = "Hit me "
+
 page2.appendChild(itemName);
+page2.appendChild(itemOrder)
+
 
 
 
