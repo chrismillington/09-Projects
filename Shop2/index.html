@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Millishop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalise.css">
 </head>
 <body>
     <div class="container">
+        <div class="toolbar">
+            <div class="logo">Millishop</div>
+            <img class="burger" src="img/hamburger.jpg" alt="">
+
+        </div>
+            <div class="burgerMenu">
+                <a href="#" class="addItemsLink">Add Items</a>
+                <a href="#" class="buyItemLink">Buy</a>
+            </div>
         <div class="addItems">
             <div class="heading-1">Add Items</div>
             <label for="name">Name of item</label>
@@ -16,10 +27,20 @@
             <textarea name="" id="itemAbout" cols="30" rows="10" class="ItemInfoTA"></textarea>
             <label for="salesPrice">Price</label>
             <input type="number" id="salesPrice">
+            <label for="picUpload">Picture</label>
+            <input type="text" name="" id="picUpload" placeholder="Picture upload">
+            <div class="right">
+                <div class="submitButton addObject">Add Item</div>
+                <div class="submitButton subBttn">Submit</div>
+            </div>
         </div>
-        <div class="displayItems"></div>
+    
+        <div class="displayItems">
+            <h1>Dogs</h1>
+        </div>
         <div class="infoOnItems"></div>
         <div class="purchaseItems"></div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
