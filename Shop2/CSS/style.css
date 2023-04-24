@@ -1,0 +1,16 @@
+
+/* Universal Styles */
+.heading-1{
+    font:800 3.2rem Sans-serif;
+    display: block;
+}
+.heading-2{
+    font:600 2.6rem sans-serif;
+    display: block;
+}
+
+/* Add Items*/
+.container{
+    width:80%;
+    margin:auto;
+}

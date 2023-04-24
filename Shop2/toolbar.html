@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolbar</title>
+    <style>
+        .toolbar {
+            height: 40px;
+            width: 100%;
+            background-color: blueviolet;
+        }
+
+        .toolbar div {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .toolbar-image-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+
+        .toolbar img {
+            height: 40px;
+            flex-basis: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar">
+        <div>
+            <img src="img/millishop.png" alt="Logo" class="toolbar-img-logo" />
+            <div class="toolbar-icon-group">
+                <div class="link">View Items</div>
+                <div class="link">Basket</div>
+                <div class="link">Admin</div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,27 +1,3 @@
-// Screens
-screens(1);
-function screens(num) {
-    let screens = document.querySelectorAll(".mainScreen");
-    console.log(screens)
-    for (let x in screens) {
-        screens[x].style.display = "none";
-    }
-    // screens[num].style.display = "block";
-}
-
-// Toolbar
-
-
-
-// Add Items
-
-
-
-// View Items
-
-
-// Order Items
-
 
 let cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
@@ -42,3 +18,4 @@ function wogDisplay(bool) {
         document.querySelector(".viewItems-section-detailedView").style.display = "none";
     }
 }
+

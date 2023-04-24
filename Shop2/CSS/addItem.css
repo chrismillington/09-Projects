@@ -1,0 +1,71 @@
+/* Containers */
+.toolbar{
+    height:40px;
+    width:100%;
+    background-color: blueviolet;
+}
+.toolbar div{
+    width:80%;
+    margin:auto;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.addItem-split{
+    display:flex;
+    flex-direction: row;
+    margin:2rem 0;
+}
+/* Universal Styles */
+    .heading-1{
+        font:800 3.2rem Sans-serif;
+        display: block;
+    }
+    .heading-2{
+        font:600 2.6rem sans-serif;
+        display: block;
+    }
+
+/* Add Items */
+
+.addItem-group-addItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:25vh;
+    margin:5vh 2vw;
+    
+}
+.addItem-group-inStock .heading-2{
+    padding-bottom: 2vh;
+}
+.addItem-group-list{
+    font:600 18pt sans-serif;
+}    
+
+.addItem-group-inStock{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height:25vh;
+    margin:5vh 2vw;
+}
+
+.addItem input{
+    width:20rem;
+    font:600 18pt sans-serif;
+    border:1px navy solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px navy;;
+    padding-left:1vw;
+    margin:2vh;
+}
+
+.addItem button{
+    border-radius: 15px;
+    font:500 16pt sans-serif;
+    margin:20px;
+    margin-bottom: 20vh;
+}

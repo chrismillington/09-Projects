@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Millishop</title>
+    <link rel="stylesheet" href="homeStyle.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <div>
+        <img src="img/millishop.png" alt="Logo" class="toolbar-img-logo" />
+        <div class="toolbar-icon-group">
+          <img
+            src="img/burger.png"
+            alt=" Burger Menu"
+            class="toolbar-img-burger"
+          />
+          <img src="shopping-basket.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="addItem screen">
+        <div class="heading-1">Add Items</div>
+        <div class="addItem-split">
+          <div class="addItem-group-addItems">
+            <div class="heading-2">Add Item</div>
+            <input
+              type="text"
+              class="addItem-input-name"
+              placeholder="Name of Item"
+            />
+            <input
+              type="textarea"
+              class="addItem-input-description"
+              placeholder="Description"
+            />
+            <input
+              type="text"
+              class="addItem-input-picture"
+              placeholder="Picture Address"
+            />
+            <input
+              type="number"
+              class="addItem-input-price"
+              placeholder="Price"
+            />
+          </div>
+
+          <div class="addItem-group-inStock">
+            <div class="heading-2">In Stock</div>
+            <div class="addItem-group-list">item - price</div>
+          </div>
+        </div>
+
+        <button class="addItem-button-add">Add Item</button>
+        <button class="addItem-button-closeScreen">Close Screen</button>
+      </div>
+
+      <div class="viewItems">
+        <div class="viewitems-section-products">
+          <div class="heading-1">Our Products</div>
+          <div class="view-items-container">
+            <div class="card">
+              <div class="card-header">
+                Boots
+                <div class="badge"></div>
+              </div>
+              <div class="card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
+              <div class="card-footer">£45</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewItems-section-detailedView">
+          <div class="viewItems-product-name">Blanket</div>
+          <div class="viewItems-product-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+            nesciunt at eum cum consectetur dolores assumenda ea consequatur
+            quibusdam doloremque atque voluptatibus aperiam aspernatur aliquid,
+            nemo in autem maiores est.
+          </div>
+          <div class="viewItems-product-price">£19.99</div>
+          <div class="viewItems-product-image">
+            <img
+              src="https://cdn.imagin.studio/getImage?&customer=carwow&tailoring=carwow&make=volvo&modelFamily=xc40&modelRange=recharge&modelVariant=od&modelYear=2020&powerTrain=fossil&transmission=0&bodySize=5&trim=0&paintId=pspc0188&fileType=png&zoomType=fullscreen&width=800&angle=23&billingTag=web"
+              alt=""
+            />
+          </div>
+          <div class="viewItems-bttn-addBasket">Add to Basket</div>
+        </div>
+      </div>
+
+      <div class="basket">
+        <div class="heading-2">Items</div>
+        <div class="basket-items-table"></div>
+        <div class="basket-split">
+          <div class="basket-left">
+            <div class="heading-2">Delivery</div>
+
+            <div class="basket-group-address">
+              <input
+                type="text"
+                class="basket-input-name basket-input"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                class="basket-input-street basket-input"
+                placeholder="Street"
+              />
+              <input
+                type="text"
+                class="basket-input-town basket-input"
+                placeholder="Town"
+              />
+              <input
+                type="text"
+                class="basket-input-postcode basket-input"
+                placeholder="Post Code"
+              />
+
+              <select
+                class="courier basket-input"
+                id="basket-courier-selection"
+              >
+                <option value="RM">Royal Mail - Free</option>
+                <option value="PF">Parcel Force - 2.99</option>
+                <option value="DHL">DHL 4.99</option>
+              </select>
+            </div>
+          </div>
+          <div class="basket-right">
+            <div class="heading-2">Payment</div>
+            <p>Enter your card details below</p>
+            <div class="card-details-group">
+              <input
+                type="text"
+                class="basket-payment-name"
+                placeholder="Full name"
+              />
+              <input
+                type="text"
+                placeholder="card number"
+                class="basket-payment-number"
+              />
+              <label for="basket-payment-date">Expiry Date</label>
+              <input type="date" id="basket-payment-date" />
+              <label for="basket-payment-cvc">CVC</label>
+              <input
+                type="text"
+                class="basket-payment-cvc"
+                id="basket-payment-cvc"
+              />
+            </div>
+            <div class="payment-button-submit">Pay</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="homeScript.js"></script>
+  </body>
+</html>

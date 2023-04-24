@@ -1,0 +1,44 @@
+
+/* Toolbar */
+.toolbar {
+
+    width: 100%;
+    background-color: #f2c7f3;
+}
+    /* Toolbar to 80% */
+.toolbar div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+    /* Display toolbar logo */
+.toolbar-image-group {
+    width:30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+    /* Display Links  */
+.link{
+    font: 500 12pt Cursive;
+    color:#5e025f;
+    text-transform: none;
+    text-decoration: none;
+}
+    /* Sets logo display */
+.toolbar img {
+    height: 40px;
+    margin-right:40vw;
+}
+@media screen and (max-width:600px) {
+    .toolbar-image-group{
+        flex-direction: column;
+        width:0;
+    }
+    .toolbar div{
+        flex-direction: column;
+    }
+
+}
