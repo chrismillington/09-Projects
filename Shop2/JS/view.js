@@ -1,4 +1,4 @@
-const stock = [];
+ const stock = [];
 start();
 function addStock(itemName, itemDescription, itemPicture, itemPrice) {
     stock.push({
@@ -36,39 +36,30 @@ for (let x = 0; x < stock.length; x++){
     cardHeader.textContent = stock[x].name;
     cardBody.textContent = stock[x].description;
     cardFooter.textContent = stock[x].price;
+
     // Adds card Items to card
     card.appendChild(cardHeader);
     card.appendChild(cardBody);
     card.appendChild(cardFooter);
+
+    //Adds Event Listener to card
+    card.addEventListener("click", () => { 
+        wogDisplay(stock[x].name,stock[x].description,stock[x].price,stock[x].picture);
+        document.querySelector(".viewItems-section-detailedView").style.display = "block";
+    })
+
     //Adds card to page
     mainDisplay.appendChild(card)
-
-    document.querySelector(".viewItems-product-name").innerHTML = stock[x].name;
-    document.querySelector(".viewItems-product-description").innerHTML = stock[x].description;
-    document.querySelector(".viewItems-product-price").innerHTML = stock[x].price;
-    document.querySelector(".viewItems-product-image").innerHTML = stock[x].image;
-
-    
 }
 
-
-let cards = document.querySelectorAll(".card");
-cards.forEach((card) => {
-    card.addEventListener("click", () => { 
-        if (document.querySelector(".viewItems-section-detailedView").style.display === "none") {
-            wogDisplay(true);
-
-        }
-    else
-        wogDisplay (false);
-    })
-})
-
-
-function wogDisplay(bool) {
-    if (bool === true)
-        document.querySelector(".viewItems-section-detailedView").style.display = "block";
-    else {
+function wogDisplay(name, desc, price, image) {
+    document.querySelector(".viewItems-product-name").innerHTML = name;
+    document.querySelector(".viewItems-product-description").innerHTML = desc;
+    document.querySelector(".viewItems-product-price").innerHTML = "£"+price;
+    console.log(image);
+    document.querySelector(".viewItems-product-image").src = image;
+    document.querySelector(".viewItems-section-close").addEventListener("click", () => {
         document.querySelector(".viewItems-section-detailedView").style.display = "none";
-    }
+    })
+    
 }

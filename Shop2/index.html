@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Millishop</title>
-    <link rel="stylesheet" href="normalise.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Toolbar</title>
+    <link rel="stylesheet" href="../CSS/normalise.css">
+    <link rel="stylesheet" href="../CSS/addItem.css">
+    <link rel="stylesheet" href="../CSS/toolbar.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/viewItem.css">
+    <link rel="stylesheet" href="../CSS/purchaseItem.css">
 </head>
 
 <body>
     <div class="toolbar">
         <div>
-            <img src="img/millishop.png" alt="Logo" class="toolbar-img-logo" />
+            <img src="../img/millishop.png" alt="Logo" class="toolbar-img-logo" />
             <div class="toolbar-icon-group">
-                <div class="link">View Items</div>
-                <div class="link">Basket</div>
-                <div class="link">Admin</div>
+                <div class="toolbar-link-view">View Items</div>
+                <div class="toolbar-link-basket">Basket</div>
+                <div class="toolbar-link-admin">Admin</div>
             </div>
         </div>
     </div>
-
-
     <div class="container">
-        <div class="addItem mainScreen">
+        <div class="addItem screen">
             <div class="heading-1">Add Items</div>
             <div class="addItem-split">
                 <div class="addItem-group-addItems">
@@ -46,48 +48,30 @@
         </div>
 
 
-        <div class="viewItems mainScreen">
-            <div class="viewitems-section-products">
-                <div class="heading-1">Our Products</div>
+        <div class="viewItems">
+            <div class="heading-1">Our Products</div>
+            <div class="view-items-screens">
                 <div class="view-items-container">
-                    <div class="card">
-                        <div class="card-header">
-                            Boots
-                            <div class="badge"></div>
-                        </div>
-                        <div class="card-body">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </div>
-                        <div class="card-footer">£45</div>
-                    </div>
+                    <div class="viewitems-section-products"></div>
+                </div>
+                <div class="viewItems-section-detailedView">
+                    <div class="viewItems-section-close">X</div>
+                    <div class="viewItems-product-name"></div>
+                    <div class="viewItems-product-description"> </div>
+                    <div class="viewItems-product-price"></div>
+                    <img src="" alt="" class="viewItems-product-image" />
+                    <div class="viewItems-bttn-addBasket">Add to Basket</div>
                 </div>
             </div>
 
-            <div class="viewItems-section-detailedView">
-                <div class="viewItems-product-name">Blanket</div>
-                <div class="viewItems-product-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-                    nesciunt at eum cum consectetur dolores assumenda ea consequatur
-                    quibusdam doloremque atque voluptatibus aperiam aspernatur aliquid,
-                    nemo in autem maiores est.
-                </div>
-                <div class="viewItems-product-price">£19.99</div>
-                <div class="viewItems-product-image">
-                    <img src="https://cdn.imagin.studio/getImage?&customer=carwow&tailoring=carwow&make=volvo&modelFamily=xc40&modelRange=recharge&modelVariant=od&modelYear=2020&powerTrain=fossil&transmission=0&bodySize=5&trim=0&paintId=pspc0188&fileType=png&zoomType=fullscreen&width=800&angle=23&billingTag=web"
-                        alt="" />
-                </div>
-                <div class="viewItems-bttn-addBasket">Add to Basket</div>
-            </div>
         </div>
 
-
-        <div class="basket mainScreen">
+        <div class="basket">
             <div class="heading-2">Items</div>
-            <div class="basket-items-table"></div>
-            <div class="basket-split">
+            <div class="basket-items-table">
+
                 <div class="basket-left">
                     <div class="heading-2">Delivery</div>
-
                     <div class="basket-group-address">
                         <input type="text" class="basket-input-name basket-input" placeholder="Name" />
                         <input type="text" class="basket-input-street basket-input" placeholder="Street" />
@@ -99,6 +83,10 @@
                             <option value="PF">Parcel Force - 2.99</option>
                             <option value="DHL">DHL 4.99</option>
                         </select>
+                    </div>
+                    <div class="agree">
+                        <div class="price">£0.00</div><button class="basket-button-purchase">Proceed to Payment</button>
+                        <div class="basket-msg-error"></div>
                     </div>
                 </div>
                 <div class="basket-right">
@@ -116,10 +104,13 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    </div>
+
+
+
 </body>
 <script src="script.js"></script>
+
+
 
 </html>

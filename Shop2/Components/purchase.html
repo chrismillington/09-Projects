@@ -6,10 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/normalise.css">
+    <link rel="stylesheet" href="../CSS/purchaseItem.css">
 </head>
 
-<body>
+<div class="basket">
+    <div class="heading-2">Items</div>
+    <div class="basket-items-table">
 
-</body>
+        <div class="basket-left">
+            <div class="heading-2">Delivery</div>
+            <div class="basket-group-address">
+                <input type="text" class="basket-input-name basket-input" placeholder="Name" />
+                <input type="text" class="basket-input-street basket-input" placeholder="Street" />
+                <input type="text" class="basket-input-town basket-input" placeholder="Town" />
+                <input type="text" class="basket-input-postcode basket-input" placeholder="Post Code" />
+
+                <select class="courier basket-input" id="basket-courier-selection">
+                    <option value="RM">Royal Mail - Free</option>
+                    <option value="PF">Parcel Force - 2.99</option>
+                    <option value="DHL">DHL 4.99</option>
+                </select>
+            </div>
+            <div class="agree">
+                <div class="price">£0.00</div><button class="basket-button-purchase">Proceed to Payment</button>
+                <div class="basket-msg-error"></div>
+            </div>
+        </div>
+        <div class="basket-right">
+            <div class="heading-2">Payment</div>
+            <p>Enter your card details below</p>
+            <div class="card-details-group">
+                <input type="text" class="basket-payment-name" placeholder="Full name" />
+                <input type="text" placeholder="card number" class="basket-payment-number" />
+                <label for="basket-payment-date">Expiry Date</label>
+                <input type="date" id="basket-payment-date" />
+                <label for="basket-payment-cvc">CVC</label>
+                <input type="text" class="basket-payment-cvc" id="basket-payment-cvc" />
+            </div>
+            <div class="payment-button-submit">Pay</div>
+        </div>
+    </div>
+
+    <script src="../JS/purchase.js"></script>
+    </body>
 
 </html>
