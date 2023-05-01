@@ -64,6 +64,10 @@ function start() {
     addStock("Car", "Twin exhaust = Wheelbarrow","https://cdn.imagin.studio/getImage?&customer=carwow&tailoring=carwow&make=volvo&modelFamily=xc40&modelRange=recharge&modelVariant=od&modelYear=2020&powerTrain=fossil&transmission=0&bodySize=5&trim=0&paintId=pspc0188&fileType=png&zoomType=fullscreen&width=800&angle=23&billingTag=web",5275)
     addStock("Skates","Penguin sized","https://cdn.shopify.com/s/files/1/0331/9201/8057/products/graf-500-figure-ice-skates-white-figure-skates-29164679233685_600x.jpg?v=1647325087",17.99 )
     addStock("Bike", "Big and Blue", "https://i.shgcdn.com/fe14ddba-4af4-4e0f-aa6c-dfc91890cef2/-/format/auto/-/preview/3000x3000/-/quality/lighter/", 170.99);
+    addStock("Car", "Twin exhaust = Wheelbarrow","https://cdn.imagin.studio/getImage?&customer=carwow&tailoring=carwow&make=volvo&modelFamily=xc40&modelRange=recharge&modelVariant=od&modelYear=2020&powerTrain=fossil&transmission=0&bodySize=5&trim=0&paintId=pspc0188&fileType=png&zoomType=fullscreen&width=800&angle=23&billingTag=web",5275)
+    addStock("Skates","Penguin sized","https://cdn.shopify.com/s/files/1/0331/9201/8057/products/graf-500-figure-ice-skates-white-figure-skates-29164679233685_600x.jpg?v=1647325087",17.99 )
+    addStock("Bike", "Big and Blue", "https://i.shgcdn.com/fe14ddba-4af4-4e0f-aa6c-dfc91890cef2/-/format/auto/-/preview/3000x3000/-/quality/lighter/", 170.99);
+    
     inStock();
 }
 
@@ -80,6 +84,7 @@ function inStock() {
 // View items
 
 // const stock = [];
+const basket = [];
 
 function addStock(itemName, itemDescription, itemPicture, itemPrice) {
     stock.push({
@@ -90,13 +95,22 @@ function addStock(itemName, itemDescription, itemPicture, itemPrice) {
     }
     ) 
 }
-
+function addToBasket(stock) {
+    basket.push({
+        name: stock.itemName,
+        description:stock.itemDescription,
+        picture: stock.itemPicture,
+        price: stock.itemPrice
+    }
+    ) 
+}
 
 let mainDisplay = document.querySelector(".view-items-container");
 let card;
 let cardBody;
 let cardHeader;
 let cardFooter;
+
 for (let x = 0; x < stock.length; x++){
     // Create card
     card = document.createElement("div");
@@ -139,12 +153,19 @@ function wogDisplay(name, desc, price, image) {
     document.querySelector(".viewItems-product-image").src = image;
     document.querySelector(".viewItems-section-close").addEventListener("click", () => {
         document.querySelector(".viewItems-section-detailedView").style.display = "none";
+        mainDisplay.style.width = "100%";
     })
     
 }
 
 // Basket
-
+function getPrice() {
+    let price =0
+    for (let i = 0; i < stock.length; i++){
+        price += stock[i].price;
+    }
+    document.querySelector(".basket-price").innerHTML = price
+}
 document.querySelector(".basket-button-purchase").addEventListener("click", () => {
     let error = document.querySelector(".basket-msg-error");
     let street = document.querySelector(".basket-input-street")

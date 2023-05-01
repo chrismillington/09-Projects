@@ -56,10 +56,12 @@
     display:none;
     padding-top:6rem;
     width:40%;
+    top:0;
+    position:sticky;
     
 }
 .viewItems-section-close{
-    position:relative;
+    position:absolute;
     right:0;
     color:red;
     font:800 18pt Sans-Serif;
@@ -73,7 +75,7 @@
     font:500 1.8rem sans-serif;
 }
 .viewItems-product-image {
-    width:30%;
+    width:70%;
     margin:1rem 0;
 }
 .viewItems-product-description{
@@ -84,7 +86,6 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width:30%;
     font:800 18pt sans-serif;
     border-radius: 15px;
     background-color: aquamarine;
