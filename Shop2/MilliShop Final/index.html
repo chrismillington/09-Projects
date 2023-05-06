@@ -25,10 +25,10 @@
         <!-- Admin -->
         <div class="section">
             <div class="heading-1">Admin</div>
-            <div class="admin ">
+            <div class="admin sides">
                 <div class="addItems">
                     <div class="heading-1">Add Item</div>
-                    <input type="text" class="input" placeholder="Name of Item" />
+                    <input type="text" class="input name" placeholder="Name of Item" />
                     <input type="textarea" class="input description" placeholder="Description" />
                     <input type="text" class="input picture" placeholder="Picture Address" />
                     <input type="number" class="input price" placeholder="Price" />
@@ -36,8 +36,9 @@
                 </div>
                 <div class="stock list">
                     <div class="heading-1">Stock</div>
-                    <div class="item">Goat</div>
-                    <div class="item">Tricycle</div>
+                    <div class="stockItems">
+                        <div class="itemGroup"><span class="deleteItem">X</span><div class="item">Goat</div></div>
+                </div>
                 </div>
 
             </div>
@@ -47,19 +48,84 @@
         <!-- viewItems -->
         <div class="section">
             <div class="heading-1">View Items</div>
-            <div class="viewItems">
+            <div class="viewItems sides">
+                <div class="cards">
+                    
+                
+                <div class="itemInset">
+                    <div class="heading-1">Item Inset</div>
+                </div>
 
             </div>
         </div>
         <!-- buyItems -->
         <div class="section">
             <div class="heading-1">Purchase Items</div>
-            <div class="buyItems">
+            <div class="buyItems sides">
+                <div class="loginMenu">
+                    <heading-1>Payment</heading-1>
+                    <div class="button">One off payment</div>
+                    <div class="button">Sign In</div>
+                </div>
+                <div class="oneOffPayment">
+                    <div class="heading-1">Your details</div>
+                    <input type="text" class="input firstName" placeholder="First Name">
+                    <input type="text" class="input secondName" placeholder="Second Name">
+                    <input type="text" class="input Street" placeholder="House name & number">
+                    <input type="text" class="input town" placeholder="Town">
+                    <input type="text" class="input postcode" placeholder="PostCode">
+                    <label for="createAccount">Want to create an account ? Add a password below</label>
+                    <input type="password" class="input passwordA" placeholder="Enter Your password" id="createAccount">
+                    <input type="password" class="input passwordB" placeholder="And Repeat please">
+                    <div class="button enterDetails">Continue</div>
+                </div>
+                <div class="signIn">
+                    <div class="heading-1">Your details</div>
+                    <div><input type="text" class="input username" placeholder="Username"></div>
+                    <div><input type="password" class="input password" placeholder="Password"></div>
+                    <div class="link">Forgot Password ?</div>
+                    <div class="button">Log in</div>
+                    
+                </div>
+                <div class="deliveryDetails">
+                    <div class="heading-1">Delivery details</div>
+                    <p>Check Address</p>
+                    <input type="text" class="input firstName" placeholder="First Name">
+                    <input type="text" class="input secondName" placeholder="Second Name">
+                    <input type="text" class="input Street" placeholder="House name & number">
+                    <input type="text" class="input town" placeholder="Town">
+                    <input type="text" class="input postcode" placeholder="PostCode">
+                    <select name="Courier" class="courier" placeholder="Please Select">
+                        <option value="RoyalMail">Royal Mail (£1.99)</option>
+                        <option value="DHL">DHL  (£4.99)</option>
+                    </select>
+                    <div class="button">Continue</div>
+                </div>
+                <div class="paymentDetails">
+                    <div class="heading-1">Payment Details</div>
+                    <input type="text" class="input name" placeholder="Name on Card">
+                    <input type="text" class="input cardNumber" placeholder="Long card number"> 
+                    <Label>Exiry Date</Label>
+                    <input type="date" class="input">
+                    <input type="text" class="input CSV" placeholder="3 Digits">
+                    <label for="save">Save these for next time</label>
+                    <input type="checkbox" class="input" id="save">
+                    <div class="button">Make Payment</div>
+                </div>
+                <div class="confirmationDetails"></div>
+
+                <div class="basket">
+                    <heading-1>Basket</heading-1>
+                    <div class="basketItems">
+                        <div class="itemGroup"><span class="deleteItem">X</span><div class="item">Furry Llama</div><span class="price">£293</span></div>
+                        <div class="itemGroup"><span class="deleteItem">X</span><div class="item">Sports Llama</div><span class="price">£498</span></div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
-
+    <script src="script.js  "></script>
 </body>
 
 </html>
