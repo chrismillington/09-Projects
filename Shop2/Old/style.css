@@ -1,0 +1,241 @@
+:root{
+    --primary : #378beb;
+    --secondary : #ebe2ab;
+}
+*{
+    font:600 18pt sans-serif;
+    text-decoration: none;
+}
+/* Common Controls */
+
+    /* Button */
+    .button{
+        height:5vw;
+        background-color: var(--secondary);
+        color:var(--primary);
+        border:#378beb solid 2px;
+        border-radius: 20px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin:3vh;
+    }
+    .button:active{
+        border:none;
+    }
+
+    /* Input */
+    .input{
+        border: 3px solid var(--primary);
+        border-radius: 15px;
+        padding:0 1vw;
+        margin:1vh 0;
+        color:var(--primary);
+
+    }
+    .input:focus{
+        outline:none;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--primary);
+        
+    }
+    /* Headings */
+    .heading-1{
+        font:800 24pt sans-serif;
+        color:var(--primary)
+    }
+
+    /* list */
+    .list{
+        margin:1vh 0;
+    }
+    .itemGroup{
+        display: block;
+        margin:2vh 0;
+    }
+    .item{
+        display:inline;
+    }
+    .deleteItem{
+        color:rgb(158, 13, 13);
+    }
+    /* Section Dividers */
+    .sides{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    /* Span */
+    span{
+        margin:0 2vw;
+    }
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.toolbar{
+    width:80%;
+    height:5%;
+    position:fixed;
+    top:10px;
+    margin:auto;
+    Padding:1% 2%;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary);
+    color:var(--secondary);
+    box-shadow: 5px 5px 5px var(--secondary),5px 5px 5px var(--primary);
+}
+.toolbar .links{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.toolbar a{
+    color : var(--secondary);
+    font-size:16pt;
+    padding:3% 0;
+    border-radius: 10px;
+}
+.toolbar a:hover{
+    color : var(--primary);
+    background-color: var(--secondary);
+}
+/* Section */
+.section{
+    width:100%;
+    min-height: 80vh;
+    background-color: var(--secondary);
+    color:var(--primary);
+    box-shadow: 0 5px 5px var(--primary);
+    border-radius: 20px;
+    margin:15vh 0;
+    padding:2vh;
+
+}
+
+/* Admin */
+
+.addItems{
+    width:40%;
+}
+.stockItems{
+    display:flex;
+}
+.stock{
+    width:40%;
+}
+.addStock{
+    /* width:40%;
+    height:5vh; */
+    margin:auto;
+    margin-bottom: 2vh;
+}
+.closeAdmin{
+    width: 30%;
+    margin:auto;
+    margin-bottom: 4vh;
+    height:5vh;
+
+}
+
+/* ViewItems */
+.viewItems{
+
+}
+.cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+}
+.card{
+    width:20vw;
+    margin:20px;
+    border-radius:20px;
+    height:50vh;
+    box-shadow: 0 5px 5px  var(--primary);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card:active{
+    box-shadow: 0 0 #fff; 
+}
+
+.card-header{
+    height:5vh;
+    width:100%;
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font:600 18pt sans-serif;
+}
+.card-body{
+    padding:1rem;
+    height:10vh;
+    overflow: hidden;
+    overflow-wrap: normal;
+    line-clamp: 2;
+}
+.card-footer{
+    height:8vh;
+    display:flex;
+    justify-content: center;
+    font:600 1
+}
+.itemInset{
+    display:none;
+    position:sticky;
+}
+.itemInset img{
+    width:70%;
+}
+.itemInset .close{
+    color:red;
+    font-weight: 800;
+    position:sticky;
+    right:0;
+}
+/* PurchaseItems */
+.buyItems{
+
+}
+.loginMenu{
+    display:none
+}
+.oneOffPayment{
+    display:none;
+    width:30%;
+}
+.signIn{
+    display: none;
+    width:30%;
+}
+.deliveryDetails{
+    display:none;
+    width:30%;
+}
+.courier{
+    outline:none;
+    border-radius: 15px;
+}
+.courier{
+    padding:2vh;
+    border-radius: 15px;
+    color:var(--primary);
+}
+.paymentDetails{
+    display:block;
+    width:30%;
+}
