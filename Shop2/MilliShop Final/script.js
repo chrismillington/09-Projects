@@ -52,8 +52,10 @@ function addItems(){
 }
 //ViewItems
 function addCards(){
-
+    //  Screens
     let mainDisplay = document.querySelector(".cards");
+    let sideDisplay = document.querySelector(".itemInset");
+    //Card Components   
     let card;
     let cardBody;
     let cardHeader;
@@ -82,12 +84,14 @@ function addCards(){
         card.appendChild(cardFooter);
     
         //Adds Event Listener to card
-        card.addEventListener("click", (e) => { 
-            
-            
+        card.addEventListener("click", (e) => {
 
-        })
-        
+            sideDisplay.style.display = "block";
+            sideDisplay.style.position = "absolute";
+            sideDisplay.style.width = "30%";
+            mainDisplay.style.width = "70%";
+            e.
+        },true);
 
         //Adds card to page
         mainDisplay.appendChild(card)
@@ -97,12 +101,12 @@ function addCards(){
 
 
 // function wogDisplay(name, desc, price, image) {
-//     let mainDisplay = document.querySelector(".cards");
-//     let sideDisplay = document.querySelector(".itemInset");
-//     sideDisplay.style.display = "block";
-//     sideDisplay.style.position = "sticky";
-//     sideDisplay.style.width = "30%";
-//     mainDisplay.style.width = "70%";
+    // let mainDisplay = document.querySelector(".cards");
+    // let sideDisplay = document.querySelector(".itemInset");
+    // sideDisplay.style.display = "block";
+    // sideDisplay.style.position = "sticky";
+    // sideDisplay.style.width = "30%";
+    // mainDisplay.style.width = "70%";
 
 //     document.querySelector(".itemInset .heading-1").innerHTML = name;
 //     document.querySelector(".itemInset .description").innerHTML = desc;

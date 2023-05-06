@@ -196,7 +196,7 @@
 }
 .itemInset{
     display:none;
-
+    right:0;
 }
 .itemInset img{
     width:70%;
