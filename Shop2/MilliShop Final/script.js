@@ -82,10 +82,13 @@ function addCards(){
         card.appendChild(cardFooter);
     
         //Adds Event Listener to card
-        card.addEventListener("click", () => { 
-            wogDisplay(stock[x].name,stock[x].description,stock[x].price,stock[x].picture);
-             })
-    
+        card.addEventListener("click", (e) => { 
+            
+            
+
+        })
+        
+
         //Adds card to page
         mainDisplay.appendChild(card)
     }
@@ -93,23 +96,24 @@ function addCards(){
 }
 
 
-function wogDisplay(name, desc, price, image) {
-    let mainDisplay = document.querySelector(".cards");
-    let sideDisplay = document.querySelector(".itemInset");
-    sideDisplay.style.display = "block";
-    sideDisplay.style.width = "30%";
-    mainDisplay.style.width = "70%";
+// function wogDisplay(name, desc, price, image) {
+//     let mainDisplay = document.querySelector(".cards");
+//     let sideDisplay = document.querySelector(".itemInset");
+//     sideDisplay.style.display = "block";
+//     sideDisplay.style.position = "sticky";
+//     sideDisplay.style.width = "30%";
+//     mainDisplay.style.width = "70%";
 
-    document.querySelector(".itemInset .heading-1").innerHTML = name;
-    document.querySelector(".itemInset .description").innerHTML = desc;
-    document.querySelector(".itemInset .price").innerHTML = "£"+price;
-    document.querySelector(".itemInset .picture").src = image;
-    document.querySelector(".itemInset .close").addEventListener("click", () => {
-        sideDisplay.style.display = "none";
-        mainDisplay.style.width = "100%";
-    })
+//     document.querySelector(".itemInset .heading-1").innerHTML = name;
+//     document.querySelector(".itemInset .description").innerHTML = desc;
+//     document.querySelector(".itemInset .price").innerHTML = "£"+price;
+//     document.querySelector(".itemInset .picture").src = image;
+//     document.querySelector(".itemInset .close").addEventListener("click", () => {
+//         sideDisplay.style.display = "none";
+//         mainDisplay.style.width = "100%";
+//     })
     
-}
+// }
 
 
 function startup(){
