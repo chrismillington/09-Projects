@@ -183,9 +183,10 @@
 }
 .card-body{
     padding:1rem;
-    height:20vh;
+    height:10vh;
     overflow: hidden;
     overflow-wrap: normal;
+    line-clamp: 2;
 }
 .card-footer{
     height:8vh;
@@ -195,6 +196,15 @@
 }
 .itemInset{
     display:none;
+}
+.itemInset img{
+    width:70%;
+}
+.itemInset .close{
+    color:red;
+    font-weight: 800;
+    position:sticky;
+    right:0;
 }
 /* PurchaseItems */
 .buyItems{
