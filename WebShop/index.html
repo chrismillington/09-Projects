@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilliShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar box">                
+            <div class="links">
+                <a href="#">Admin</a>
+                <a href="#">View</a>
+                <a href="#">Buy</a>
+            </div>
+        </div>
+        <div class="section admin box">
+            <div class="heading-1">Admin</div>
+            <div class="sides">
+                <div class="addItems side">
+                    <div class="heading-1">Add Item</div>
+                    <input type="text" class="input name" placeholder="Name of Item" />
+                    <input type="textarea" class="input description" placeholder="Description" />
+                    <input type="text" class="input picture" placeholder="Picture Address" />
+                    <input type="number" class="input price" placeholder="Price" />
+                    <div class="button addStock">Add to Stock</div>
+                </div>
+                <div class="stock side">
+                    <div class="heading-1">Stock</div>
+                    <div class="stockItems">
+                        <div class="itemGroup">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section view box">
+            <div class="heading-1">Our Items</div>
+            <div class="sides">
+                <div class="cards"></div>
+                <div class="inset"></div>
+            </div>
+        </div>
+        <div class="section buy box">            
+            <div class="heading-1">Purchase
+            </div>
+            <div class="sides"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -146,9 +146,7 @@
 }
 
 /* ViewItems */
-.viewItems{
 
-}
 .cards{
     display:flex;
     flex-direction: row;
@@ -196,7 +194,11 @@
 }
 .itemInset{
     display:none;
-    right:0;
+    z-index: 20;
+    height:20vh;
+    position:block;
+    width:25%;
+    background-color: var(--primary);
 }
 .itemInset img{
     width:70%;
@@ -204,13 +206,11 @@
 .itemInset .close{
     color:red;
     font-weight: 800;
-    position:sticky;
+    
     right:0;
+    
 }
 /* PurchaseItems */
-.buyItems{
-
-}
 .loginMenu{
     display:none
 }

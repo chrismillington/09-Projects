@@ -1,0 +1,60 @@
+:root{
+    --primary : #378beb;
+    --secondary : #ebe2ab;
+}
+*{
+    font:600 18pt sans-serif;
+    text-decoration: none;
+}
+.heading-1{
+    font:900 28pt sans-serif;
+    text-decoration: none;
+}
+.heading-2{
+    font:600 24pt sans-serif;
+    text-decoration: none;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+.toolbar{
+    border:2px solid black;
+}
+.section{
+    border:2px solid black;
+    margin:5vh 0;
+}
+.sides{
+    display:flex;
+    flex-direction: row;
+
+}
+.side{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.vMenu{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.card{
+    height:20vh;
+    width:25%;
+    margin:1vw;
+    background-color: red;
+}
+.cards{
+    height:200px;
+    width:fit-content;
+}
+.inset{
+    border:2px solid black;
+}
+.miniMenu{
+    border:2px solid black;
+}
