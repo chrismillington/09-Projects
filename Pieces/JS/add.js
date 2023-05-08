@@ -39,7 +39,7 @@ function removeItem(){
     let cards = document.querySelectorAll(".card")
     for(let cd = 0 ;cd<cards.length;cd++){
         cards[cd].addEventListener("click",(e)=>{
-            e.
+            
         })
     }
 }
